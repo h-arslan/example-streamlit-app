@@ -27,7 +27,8 @@ def load_h5_model(bucket_name, source_blob_name):
     
     model = h5py.File(local_model_filename, "r")
 
-    
+
+    print('I was always here')
     os.remove(local_model_filename)
 
     return model
